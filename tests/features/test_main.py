@@ -1,3 +1,4 @@
+import pytest
 
 def test_main():
-    assert True
+    assert 1 == 1
