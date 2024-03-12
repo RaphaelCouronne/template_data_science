@@ -8,12 +8,6 @@ Template to begin each Data Science project with
 
 
 
-
-
-
-
-
-
 Project Organization
 ------------
 

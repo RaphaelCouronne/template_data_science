@@ -17,11 +17,11 @@ jobs:
       run: |
         curl -sSL https://install.python-poetry.org | python -
         export PATH="$PATH:$HOME/.poetry/bin"
-    - name: Lint
-      run: poetry run flake8 .
-    - name: Test with coverage
-      run: poetry run coverage run -m pytest && poetry run coverage report -m
     - name: Install dependencies
       run: poetry install
     - name: Run tests
       run: poetry run pytest
+    - name: Lint
+      run: poetry run flake8 .
+    - name: Test with coverage
+      run: poetry run coverage run -m pytest && poetry run coverage report -m
