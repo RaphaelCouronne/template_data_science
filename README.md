@@ -4,8 +4,10 @@ base_data_science
 Template to begin each Data Science project with
 
 
-
-
+## CI/CD
+poetry run flake8 .
+poetry run coverage html
+poetry run pytest .
 
 
 Project Organization
